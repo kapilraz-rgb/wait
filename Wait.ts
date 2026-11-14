@@ -16,8 +16,8 @@ namespace Wait {
      * @param s describe parameter here, eg: "Hello"
      * @param e describe parameter here
      */
-    //% block
-    export function Wait(num: number,e:Secs): void {
+    //% block="Wait for %num seconds"
+    export function Wait(num: number): void {
         control.waitMicros((1000 * num) * 1000)
 
     }
